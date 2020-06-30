@@ -1,0 +1,30 @@
+http://localhost:8080/restapi/customers                                             ---HTTP Get # Get all customers
+http://localhost:8080/restapi/customers                                             ---HTTP Post # Create a new customer
+http://localhost:8080/restapi/customers/{customerId}                                ---HTTP Get # Get a customer
+http://localhost:8080/restapi/customers/{customerId}                                ---HTTP Delete # Delete a customer
+http://localhost:8080/restapi/customers/{customerId}                                ---HTTP Put # Update an existing customer
+http://localhost:8080/restapi/customers/{customerId}/accounts                       ---HTTP Post #Create an account for a customer
+http://localhost:8080/restapi/customers/{customerId}/accounts                       ---HTTP Get #Get accounts from a customer
+http://localhost:8080/restapi/customers/{customerId}/accounts/{accountId}           ---HTTP Delete # Delete an account from a customer
+http://localhost:8080/restapi/customers/{customerId}/accounts/{accountId}           ---HTTP Put # Update an account from a customer
+
+
+>>To create a customer (JSON)
+{
+    "customerFName" : "John",
+    "customerLName" : "Cena",
+    "email" : "john123@gmail.com",
+    "phoneNumber" : "+919919027499",
+    "adressLine1" : "street 23/1",
+    "addressLine2" : "New Delhi"
+}
+
+
+>>To create account for a customer (JSON)
+
+{
+    "accountNumber" : "123456788",
+    "balance" : "4325"
+}
+
+
